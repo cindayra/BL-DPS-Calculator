@@ -1,4 +1,3 @@
-
 print ('This script is based on the guide made by district 969')
 print ('http://steamcommunity.com/sharedfiles/filedetails/?id=555942154')
 
@@ -16,7 +15,7 @@ DOTTIME = input ('Input how long you DoT lasts: ')
 
 d = int(D)
 m = int(M)
-rof = int(ROF)
+rof = int(float(ROF))
 r = int(R)
 a = int(float(A))
 es = int(ES)
@@ -49,7 +48,7 @@ answer1 = m * r * ps
 if answer1 > 0:
     answer2 = rof / answer1
 else:
-    answer2 = 1
+    answer2 = rof
 answer3 = es * answer2
 answer4 = answer3 / a
 
